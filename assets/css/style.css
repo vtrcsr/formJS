@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background: url(/assets/imgs/polka-dots.svg);
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.main-form.error i.fa-triangle-exclamation{
+  color: crimson;
+  display: flex;
+  top: 38px
+}
+
+.main-form.sucess i.fa-square-check{
+  color: rgb(25, 185, 25);
+  display: block;
+  top: 38px
+}
+
+.container{
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 3px 3px 8px 4px rgba(0, 0, 0, 0.7);
+  width: 420px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header{
+  background-color: #eee;
+  padding: 23px;
+}
+
+.form{
+  padding: 30px;
+}
+
+.main-form{
+  margin-bottom: 12px;
+  padding-bottom: 23px;
+  position: relative;
+}
+
+.main-form label{
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.main-form input{
+  border: 1px solid #1a1a1a;
+  display: block;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  padding: 8px;
+}
+
+.main-form i{
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  display: none;
+}
+
+.main-form small{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+button{
+  background: rgb(245, 12, 12);
+  background: linear-gradient(0deg, rgb(233, 10, 10) 50%, rgb(255, 149, 0) 100%);
+  border: none;
+  color: #f5f5f5;
+  font-weight: 900;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  text-shadow: 2px 2px 2px rgb(195, 0, 39);
+  text-transform: uppercase;
+}
+
+button:hover{
+  box-shadow: 2px 2px 4px #2d2d2d;
+  cursor: pointer;
+  transform: translate(-0.1px, -0.1px);
+}
+
+.sucess input{
+  border-color: rgb(25, 185, 25);
+  box-shadow: 1px 1px 8px rgb(25, 185, 25);
+}
+.error input{
+  border-color: crimson;
+  box-shadow: 1px 1px 8px crimson;
+}
+
+.error small{
+  display: block;
+  color: crimson;
+}
